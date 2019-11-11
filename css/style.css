@@ -1,0 +1,1296 @@
+
+html {
+  font-size: 62.5%;
+}
+
+body{
+  /* 文字が滑らかになるが印象は少し弱めになる特徴があるので注意 */
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  background-color: #ffffff;
+  color: #333;
+  font-family: "M PLUS 1p","游ゴシック体", "Yu Gothic", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "MS Pゴシック", "MS PGothic", sans-serif;
+  /* 16pxのフォントは様々なサイズに割り切れて使い勝手が良いのでおまじない的にこのサイズが指定されている */
+  font-size: 1.6rem;
+  letter-spacing: 2px;
+}
+
+/* ヘッダー==========================
+==================================== */
+header{
+  width: 100vw;
+  padding: 0 10px;
+  height: 74px;
+  font-size: 13px;
+  line-height: 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  position: fixed;
+  background-color: #ffffff;
+  z-index: 1;
+}
+header > .go-doc-responsive > a{
+  color: #fff;
+}
+header .header-wrapper{
+  display: flex; 
+  font-weight: bold;  
+  margin: 2px;
+}
+header .header-wrapper p{
+  margin-top: auto;
+}
+header .isara-logo{}
+header .isara-logo img{
+  width: 134px;
+}
+.header-wrapper img{
+}
+header .sub-desc{}
+header .go-doc{
+  letter-spacing: 1px;
+  color: white;
+  background-color: #da6b63;
+  height: 43px;
+  padding: 0 40px;
+  border-radius:20px;
+}
+header .go-doc-responsive{
+  display: none;
+}
+
+/* ヒーローイメージ====================
+==================================== */
+.hero-section{
+  padding-top: 74px;
+}
+.hero-image-wrapper{
+  background: linear-gradient(135deg, rgba(246, 255, 0, 0.3), rgba(255, 0, 161, 0.3)), url('../img/isara-img1.jpg');
+  background-position: center;  
+  height: 500px;
+  text-align: center;
+}
+.message{
+  padding-top: 95px;
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 50px;
+}
+.hero-image-wrapper img{
+  width: 320px;  
+}
+.message-desc{
+  padding-top: 44px;
+  font-size: 20px;
+  line-height: 22px;   
+  font-weight: bold;
+}
+
+/* 月１０万円を目指そう================
+==================================== */
+.try10man-wrapper{
+  background-color: #ebb94c;
+  color: white;
+  text-align: center;
+}
+.try10man-wrapper > p{
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+  padding-top: 31px;
+}
+.try10man-wrapper .attention{
+  display: inline;
+  font-size: 18px;
+  line-height: 32px;
+  color: #c7254e;
+  padding: 2px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  letter-spacing: normal;
+}
+.try10man-wrapper button{
+  font-weight: bold;
+  display: block;
+  margin: 0 auto;
+  font-size: 28px;
+  line-height: 45px;
+  margin-top: 50px; 
+  padding: 34px 300px;
+  border-radius: 180px;
+  background-color: #da6b63;
+}
+.try10man-bosyu{
+  font-size: 21px;
+  line-height: 34px;
+  padding-top: 50px;
+  font-weight: bold;
+}
+.try10man-bosyu-responsive{
+  display: none;
+  font-size: 21px;
+  line-height: 34px;
+  padding-top: 30px;
+  font-weight: bold;
+}
+.try10man-bosyu-responsive p{
+  padding: 10px 0;
+}
+.try10man-bosyu p{
+  margin-top: 15px;
+  padding: 5px; 
+} 
+.try10man-wrapper .sns{
+  padding: 15px 0 30px 0;
+}
+.try10man-wrapper .sns .sns-block{
+  display: inline-block;
+}
+.sns-block:nth-child(1){
+  margin-right: -2px;
+}
+.try10man-wrapper .sns a{
+}
+
+/* エンジニアの自由について=============
+==================================== */
+.freedom-wrapper{
+  text-align: center;
+}
+.freedom-wrapper .freedom{
+  position: relative;
+  height: 100px;
+  width: 860px;
+  margin: 0 auto;
+}
+.freedom-wrapper .freedom h2{
+  margin-top: 80px;
+  font-size: 27px;
+  line-height: 40px;
+  font-weight: 700;
+}
+.freedom-wrapper .freedom-desc{
+  margin-top: 8px;
+}
+.freedom-wrapper .freedom-desc p{
+  padding-top: 14px; 
+  font-size: 20px;
+  line-height: 32px;
+  margin-bottom: 124px;
+}
+
+/* About=============
+==================================== */
+.about{
+  background-color: #fef5e0;
+  text-align: center;
+  padding-top: 80px;
+  position: relative;
+  padding-bottom: 70px;
+}
+.about .about-radius{
+  position: absolute;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background-color: #ebb94c;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.about .about-radius p{ 
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.about .about-isara{
+  position: relative;
+  height: 100px;
+  width: 860px;
+  margin: 0 auto;
+}
+.about .about-isara h2{
+  font-size: 27px;
+  line-height: 40px;
+  font-weight: 700;
+}
+.about > p{
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+  padding-top: 45px;
+  text-align: center;
+}
+.about .about-must-wrapper{
+  max-width: 1170px;
+  width: 95%;
+  border: 2px solid #ebb94c;
+  background-color: #fff;
+  margin: 0 auto;
+  padding: 40px 0;
+  border-radius: 5px;
+}
+.about .about-must-images{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 200px;
+}
+.about .about-must-images .about-must-img{
+  padding: 0 14px;
+}
+
+.about .about-must-wrapper > p{
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: 600;
+}
+.about .about-must-wrapper .about-must-img img{
+  height: 60px;
+}
+.about .about-must-wrapper .about-must-img p{
+  font-size: 12px;
+  line-height: 19px;
+}
+/* iSaraで「基本的なプログラミングスキル」は教えません
+==================================== */
+.isara-flow{
+  background-image: url('../img/isara-img3.jpg');
+  background-size: cover;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+  font-weight: bold;
+  padding-bottom: 39px;
+}
+.isara-flow .isara-special{
+  color: #fff;
+  font-weight: bold;
+}
+.isara-flow .isara-special h2{
+  font-size: 28px;
+  line-height: 40px;
+  padding-top: 60px;
+  font-weight: bold;
+}
+.isara-flow .isara-special p{
+  font-size: 20px;
+  line-height: 32px;
+  padding-top: 26px;
+}
+.isara-flow .steps{
+  margin-top: 33px;
+  margin-bottom: 36px;
+  display: flex;
+  justify-content: center;
+}
+.isara-flow .step{
+  margin: 0 10px;
+  padding: 30px 26px;
+  background-color: #fff;
+  border-radius: 5px;
+  width: 30%;
+}
+.isara-flow .step p{
+  font-size: 14px;
+  line-height: 22px;
+  padding-top: 10px;
+}
+.isara-flow .step .step-color{
+  background-color: #ebb94c;
+  padding: 5px 0; 
+  border-radius: 5px;
+  color: #fff;
+}
+.isara-flow .step .learn{
+  font-size: 16px;
+  line-height: 26px;  
+}
+.importance-isara{
+  position: relative;
+  text-align: center;
+  background-color: #016ea9;
+  color: #fff; 
+  width: 100vw;
+  height: 142px;
+}
+
+.importance-isara p{
+  width: 100%;
+  position: absolute;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: bold;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.importance-isara p .colored{
+  color: #ebb94c;
+}
+/*iSara[イサラ]で学べること============
+==================================== */
+.learn-wrapper{
+  padding-top: 63px;
+  text-align: center;
+}
+.learn-wrapper h2{
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: bold;
+}
+.learn-wrapper h2 span{
+  font-size: 14px;
+}
+.learn-wrapper h3{
+  margin-top: 26px;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.learn-wrapper .learns-img{
+  margin-top: 60px;
+}
+.learn-wrapper .learns-img img{
+  width: 17%;
+  /* height: 180px; */
+  padding: 0 15px;
+}
+
+.learn-wrapper > p{
+  margin-top: 35px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: bold;
+}
+/* 他のスクールと違うポイント================
+==================================== */
+.different-wrapper{
+  background-color: #fef5e0;
+  width: 100%;
+  padding-top: 100px;
+}
+.different-wrapper .different-isara{
+  text-align: center;
+  width: 
+}
+.different-wrapper .different-isara h2{
+  font-size: 29px;
+  line-height: 20px;
+  font-weight: 700;
+}
+.different-message{
+  position: relative;
+  height: 100px;
+  width: 860px;
+  margin: 0 auto;
+  white-space: nowrap;
+}
+.different-message p{
+  position: absolute;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: bold;
+  left: 50%;
+}
+.different-message h2{
+  position: absolute;
+  padding-top: 70px;
+  left: 50%;
+}
+
+.different-message p,
+.different-message h2{
+
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.different-wrapper .different-isara p{
+
+}
+.different-examples{
+  max-width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+} 
+.different-ex{
+  width: 30%;
+}
+.different-ex img{
+  width: 100%;
+}
+.different-ex h3{
+  font-weight: bold;
+  margin-top: 7px;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ebb94c;
+} 
+.different-ex p{
+  font-size: 16px;
+  line-height: 26px;
+} 
+.different-after{
+  background-color: #fff;
+  padding: 45px 50px;
+  border: 2px solid #ebb94c;
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  /* white-space: nowrap; */
+}
+.different-after h3{
+  font-size: 28px;
+  line-height: 45px;
+  font-weight: bold;
+  color:#ebb94c;
+}
+.different-after h4{
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: bold;
+}
+.different-after p{
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.different-wrapper > p{
+  padding-top: 20px;
+  padding-bottom: 40px;
+  font-size: 14px;
+  line-height: 22px;
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+/* 創業メンバー=======================
+==================================== */
+.ceo-wrapper{
+  background-image: url('../img/isara-5.jpg');
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  padding-bottom: 50px;
+}
+.ceo-wrapper h2{
+  padding-top: 80px;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: bold;
+}
+.ceo-wrapper > p{
+  padding-top: 37px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.ceo-wrapper .ceo-grid{
+  padding-top: 47px;
+  max-width: 60%;
+  margin: 0 auto;
+}
+.ceo-wrapper .ceo-member{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  /* align-items: center; */
+  row-gap: 70px;
+  column-gap: 30px
+}
+.ceo-profile{
+  margin-top: 130px;
+  position: relative;
+  border: 2px solid #fff;
+  /* width: 370px; */
+}
+.ceo-profile img{
+  border-radius: 50%;
+  position: absolute;
+  top: -15%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.ceo-profile .title{
+  margin-top: 60px;
+}
+.ceo-wrapper .ceo-history{
+  font-size: 16px;
+  line-height: 26px;
+  width: 80%;
+  margin: 0 auto;
+  /* justify-content: center; */
+}
+.ceo-wrapper .story{
+  text-align: left;
+  text-rendering: optimizeLegibility;
+  padding-bottom: 40px;
+}
+/* 疑問==============================
+==================================== */
+.doubt-wrapper{
+  text-align: center;  
+  /* position: relative; */
+}
+.doubt-main{
+  position: relative;
+  width: 100%;
+  height: 270px;
+  background-color: #ebb94c;
+}
+.doubt-main::after{
+  content: '';
+  position: absolute;
+  border: 25px solid transparent;
+  border-top-color: #ebb94e;
+  top: calc(100% + 25px);
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.doubt-wrapper .doubt-title{
+  padding-top:40px;
+  color: white;
+}
+.kakko-block{
+  position: relative;
+  margin: 0 auto;
+  width: 840px;
+  height: 100px;
+  margin-top: 20px;
+}
+.doubt-wrapper .question-mark{
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  margin:0 auto;
+}
+.doubt-wrapper .question-mark p{
+  font-size: 14px;
+  line-height: 19px;
+  color: #ebb94c;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.doubt-wrapper .doubt-title .kakko-block{ 
+  width: 860px;
+  height: 100px; 
+}
+.doubt-wrapper .doubt-title h2{ 
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: bold;
+}
+.doubt-wrapper .doubt-answer{
+  
+}
+.doubt-wrapper .doubt-answer h3{
+  margin-top: 41px;
+  font-size: 28px;
+  line-height: 45px;  
+  font-weight: bold;
+}
+.doubt-wrapper .doubt-answer p{
+  font-weight: bold;
+  line-height: 45px;  
+}
+.doubt-wrapper > p{
+  font-size: 14px;
+  line-height: 22px;
+}
+.doubt-voices{
+}
+.doubt-voices{
+  margin-top: 33px;
+}
+.doubt-voices .voice{
+  width: 780px;
+  margin: 0 auto;
+  display: flex;
+  margin-top: 35px
+}
+.doubt-voices .voice img{
+  width: 240px;
+  border: 3px solid #ebb94c;
+}
+.voice-img-box{
+}
+.doubt-voices .voice-message{
+  width: 550px;
+  padding-left: 28px;
+  text-align: left;
+  font-style: italic;
+}
+.doubt-voices .voice .voice-message p{
+  padding-top: 20px;
+  color: #777777;
+  font-size: 17px;
+  line-height: 29px;
+}
+.doubt-voices .voice .voice-message a{
+  font-size: 15px;
+  line-height: 24px;
+  color: #777777;
+  text-decoration: underline;
+}
+
+/* 学べる内容========================
+==================================== */
+.content-wrapper{
+  text-align: center;
+  color: white;
+}
+.content-back{
+  background-image: url('../img/isara-6.jpg');
+  background-size: cover;
+}
+.content-wrapper h2{
+  padding-top: 58px;
+  font-weight: bold;
+  margin-top: 58px;
+  font-size: 28px;
+  line-height: 40px;
+}
+.content-wrapper p{
+  margin-top: 14px;
+  font-size: 16px;
+  line-height: 26px;
+}
+.content-wrapper .content-table{
+  margin-top: 50px;
+  /* margin: 0 auto; */
+}
+.content-wrapper .content-table .content{
+  display: inline-block;
+  vertical-align: top;
+  width: 370px;
+  background-color: #fff;
+  border: 2px solid #016ea9;
+  border-radius: 3px;
+  margin: 0 15px;
+  margin-top: 0;
+  font-weight: bold;
+}
+.content-wrapper .content-table .content h3{
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 32px;
+  padding: 14.5px 0;
+  background-color: #016ea9;
+  
+}
+.content-wrapper .content-table .content ul{
+  color: #333;
+  margin-bottom: -3px;
+}
+.content-wrapper .content-table .content li{
+  font-size: 15px;
+  line-height: 26px;
+  padding: 10px 0;
+  border-bottom: 1px dotted #e0e0e0;
+  list-style: none;
+}
+.content-wrapper .content-table .content li:nth-last-child(1){
+  border-bottom: 0 solid transparent;
+}
+.content-wrapper .content-hosyo{
+  position: relative;
+  margin-top: 80px;
+  height: 140px;
+  width: 100vw;
+  background-color: #016ea9;
+}
+.content-wrapper .content-hosyo p{
+  position: absolute;
+  top: calc(50% - 10px);
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+  font-size: 20px;
+  line-height: 32px;
+  color: #fff;
+  /* height: 140px; */
+  white-space: nowrap;
+  font-weight: bold;
+}
+
+/* 学習の流れ========================
+==================================== */
+.flow-wrapper{
+  text-align: center;
+}
+.flow-wrapper > h2{
+  margin-top: 64px;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: bold;
+}
+.flow-wrapper > img{
+  margin-top: 48px;
+  width: 90%;
+}
+.flow-wrapper .flows{
+  margin-top: 40px;
+  
+}
+.flow-wrapper .flows img{
+  width: 90%;
+}
+.flow-wrapper .flows .flow{
+  display: flex;
+  width: 95%;
+  background-color: #fef5e0;
+  margin: 0 auto;
+  padding: 20px 40px;
+  align-items: center;
+  border-radius: 5px;
+}
+.flow-wrapper .flow .flow-midashi{
+  width: 130px;
+  margin: 0 40px;
+}
+.flow-wrapper .flow .flow-midashi img{
+  margin: 10px 0;
+}
+.flow-wrapper .flow .flow-midashi h3{
+  margin: 10px 0;
+  width: 100%;
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: bold;
+  white-space: nowrap;
+}
+.flow-wrapper .flow .flow-midashi h3:last-child{
+  margin-left: -30px;
+  text-align: center;
+  width: 180px;
+}
+.flow-wrapper .flows .flow-content{
+  text-align: left;
+  /* padding: 0 40px; */
+}
+.flow-wrapper .flow-content p{
+  margin-top: 5px;
+  padding-top: 10px;
+  font-size: 14px;
+  line-height: 22px;
+}
+.flow-wrapper .flow-content .attension{}
+.flow-wrapper .flow-content .attension{
+  font-size: 15px;
+  line-height: 26px;
+  font-weight: bold;
+}
+.flow-wrapper .flows > img{}
+
+  /* スマホサイズ用のスタイル */
+  .accordions-flow{
+    display: none;
+  }
+  
+  .accordion-flow {
+  position: relative;
+  margin-top: 5px;
+  background-color: #fef5e0;
+  border-radius: 3px;
+  cursor: pointer;
+  display: block;
+  padding: 10px;
+  /* text-align: center; */
+  }
+  .accordion-flow:after {
+    content: "";
+    position: absolute;
+    right: 25px;
+    top: 38%;
+    transition: all 0.2s ease-in-out;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-top: solid 2px #777;
+    border-right: solid 2px #777;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+  .accordion-flow.open:after {
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    top: 45%;
+  }
+  .accordion-flow .accordion-img{
+  
+  }
+  .accordion-title{
+    display: flex;
+  }
+  .accordion-flow img{
+    /* margin-top: 5px; */
+    padding: 0 12px 0 5px; 
+    width: 45px;
+  }
+  .accordion-flow p{
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: bold;
+  margin-bottom: 0;
+  align-items: center;
+  }
+  
+  .accordion-content {
+    display: none;
+    background-color: #fef5e0;
+    padding: 20px 0;
+  }
+  .accordion-content p{
+    padding: 0 15px;
+  }
+
+/* なぜバンコクなのか===================
+==================================== */
+.why-wrapper{
+  margin-top: 40px;
+  background-image: url('../img/isara-8.jpg');
+  background-size: cover;
+  position: relative;
+  color: white;
+  width: 100vw;
+  height: 500px;
+}
+.whys{
+  position: absolute;
+  top: 0;
+  left: 8%;
+}
+.why-wrapper h2{
+  padding-top: 100px;
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: bold;
+}
+.why-wrapper p{
+  font-size: 14px;
+  line-height: 22px;
+  margin-top: 20px;
+}
+.why-wrapper ul{
+  margin-top: 17px;
+}
+.why-wrapper ul li{
+  list-style: none;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: bold;
+  padding-top: 8px;
+}
+.why-wrapper .whys .strong{
+  margin-top: 3px;
+  font-size: 20px;
+  line-height: 32px;
+  font-weight: bold;
+  padding-top: 10px;
+}
+
+/* 特典================
+==================================== */
+.gift-wrapper{
+  padding-top: 65px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #f7c23c;
+  padding-bottom: 40px;
+}
+.gift-wrapper h2{
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: bold;
+  
+}
+.gift-wrapper > p{
+  margin-top: 40px;
+  font-size: 16px;
+  line-height: 26px;
+  margin-bottom: 80px;
+}
+.gift-wrapper > p > span{
+  color: white;
+}
+.gift-wrapper .gifts{
+  position: relative;
+  display: flex;
+  margin: 0 auto;
+  width: 95%;
+  justify-content: center;
+  border: 2px solid #fff;
+}
+.gift-wrapper .gifts h3{
+  white-space: nowrap;
+  padding: 0 15px;
+  background-color: #f7c23c;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);  
+  font-size: 32px;
+  line-height: 45px;
+  font-weight: bold;
+}
+.gift-wrapper .gifts img{}
+.gift-wrapper .gifts .gift{
+  position: relative;
+  width: 250px;
+  height: 250px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin: 60px 5%;
+}
+
+.gift-wrapper .gift .gift-box{
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.gift-wrapper .gift .gift-box p{
+  width: 220px;
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 22px;
+}
+.gift-wrapper .gift .gift-box .attension{
+  font-size: 24px;
+  line-height: 38px; 
+  font-weight: normal;
+  color: #ebb94c;
+}
+
+/* ボランティアではない================
+==================================== */
+.nofree-wrapper{
+  width: 100vw;
+  margin: 0 auto;
+  padding-top: 61px;
+  background-image: url('../img/isara-9.jpg');
+  background-size: cover;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 87px;
+}
+.nofree-wrapper h2{
+  font-size: 28px;
+  line-height: 45px;
+  font-weight: bold;
+}
+.nofree-wrapper p{
+  margin-top: 24px;
+  font-size: 19px;
+  line-height: 32px;
+}
+.nofree-wrapper p:last-child{
+  margin-top: -20px;
+}
+.nofree-wrapper .nofree{
+  margin-top: 46px;
+  
+}
+.nofree-wrapper .nofree h3{
+  position: relative;
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: bold;
+  margin: 0 auto;
+  width: 860px;
+  height: 100px;
+}
+
+/* メッセージ================
+==================================== */
+.message-wrapper{
+  text-align: center;
+  width: 100%;
+}
+.message-wrapper h2{
+  font-weight: bold;
+  margin-top: 60px;
+  font-size: 28px;
+  line-height: 40px;
+}
+.message-wrapper h3{
+  font-weight: bold;
+  margin-top: 38px;
+  font-size: 20px;
+  line-height: 32px;
+}
+.message-wrapper p{
+  font-size: 14px;
+  line-height: 22px;
+}
+.message-wrapper .message-content{
+  max-width: 70%;
+  margin: 0 auto;
+  margin-top: 42px;
+  display: flex;
+}
+.message-wrapper .img-content{
+  margin-right: 30px;
+}
+.message-wrapper .message-content .content{
+}
+.message-wrapper .content p{
+  text-align: left;
+}
+.message-wrapper .content ul{
+  margin: 30px 0;
+}
+.message-wrapper .content li{  
+  font-size: 14px;
+  line-height: 22px;
+  text-align: left;
+  list-style: none;
+}
+
+/* 資料請求フォーム================
+==================================== */
+.form-wrapper{
+  background-color: #ebb94c;
+  text-align: center;
+  padding: 69px;
+}
+.form-wrapper h2{
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: bold;
+}
+.form-wrapper p{
+  margin-top: 18px;
+  font-size: 16px;
+  line-height: 26px;
+}
+.form-wrapper .form-content{
+  margin-top: 18px;
+  width: 67%;
+  margin: 0 auto;
+}
+.form-wrapper .form-content input,
+.form-wrapper .form-content textarea {
+  background-color: #fff;
+  width: 100%;
+  color: #333333;
+  display: block;
+  text-align: left;
+  padding: 18px 10px;
+  margin-top: 24px;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 22px;
+}
+.form-wrapper .form-content textarea{
+  margin-top: 54px;
+}
+.form-wrapper .form-content button{
+  background-color: #da6b63;
+  width: 100%;
+  color: #fff;
+  margin-top: 34px;
+  font-size: 23px;
+  line-height: 32px;
+  padding: 12px 0;
+  font-weight: bold;
+  border-radius: 28px;
+  letter-spacing: 25px;
+}
+.question-wrapper{}
+
+
+/* よくある質問=======================
+==================================== */
+.question-wrapper{
+  width: 100%;
+  text-align: center;
+  padding-top: 59px;
+}
+.question-wrapper h2{
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: bold;
+}
+.question-wrapper .accordions{
+  margin-top: 40px;
+}
+
+.question-wrapper .accordion label{
+  font-size: 20px;
+  line-height: 22px;
+  font-weight: bold;
+  padding: 20px 25px 20px 15px;
+}
+.question-wrapper .acd-content{
+  
+}
+.question-wrapper .acd-content p{
+  font-size: 16px;
+  line-height: 26px;
+}
+
+
+/* アコーディオンセグメント */
+.accordion{
+  text-align: left;
+  width: 75%;
+  margin: 0 auto;
+  font-weight: bold;
+}
+.acd-check{
+  display: none;
+}
+.acd-label{
+  position: relative;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 1px 2px -2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  color: #333;
+  display: block;
+  margin-bottom: 1px;
+  padding: 10px;
+}
+.acd-label:hover{
+  text-decoration: underline;
+}
+.acd-label::after{
+  position: absolute;
+  background-image: url('../img/arrow.svg');
+  content: '';
+  color: #333;
+  display: block;
+  margin-bottom: 1px;
+  padding: 10px 10px;
+  top: 29%;
+  right: 2%;
+  /* -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+}
+.question-color{
+  color: #016ea9;
+}
+.acd-content{
+  height: 0;
+  opacity: 0;
+  padding: 0 10px;
+  transition: .5s;
+  visibility: hidden;
+}
+.acd-check:checked + .acd-label + .acd-content{
+  height: 40px;
+  opacity: 1;
+  padding: 10px;
+  visibility: visible;
+  margin-bottom: 60px;
+}
+.acd-check:checked + .acd-label::after{
+  transform: rotateX(180deg);
+}
+.acd-check:checked + .acd-label{
+  text-decoration: underline;
+}
+
+/*  Footer================
+==================================== */
+footer{
+  margin-top: 60px;
+  text-align: center;
+  font-size: 10px;
+  /* line-height: 5px; */
+  background-color: #e0e0e0;
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+footer p{
+  margin-bottom: 0;
+}
+footer .sns{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0 20px 0;
+}
+footer .sns .sns-block{
+  padding-right: 7px;
+}
+footer p:last-child(1){
+}
+/* その他================
+==================================== */
+/* カギカッコ */
+.kakko::before,
+.kakko::after{
+  position: absolute;
+  content: '';
+  width: 50px;
+  height: 50px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.kakko::before{
+  top: -35px;
+  left: 0;
+  border-top: 4px solid #ebb94c;
+  border-left: 4px solid #ebb94c;
+}
+.kakko::after{
+  bottom: 25px;
+  right: 0;
+  border-bottom: 4px solid #ebb94c;
+  border-right: 4px solid #ebb94c;
+}
+.doubt-wrapper .doubt-title h2::before,
+.nofree-wrapper .nofree h3::before{
+  border-top: 4px solid #fff;
+  border-left: 4px solid #fff;
+} 
+.doubt-wrapper .doubt-title h2::after,
+.nofree-wrapper .nofree h3::after{
+  border-bottom: 4px solid #fff;
+  border-right: 4px solid #fff;
+} 
+.nofree-wrapper .nofree h3::before{
+  top: -10px;
+}
+.nofree-wrapper .nofree h3::after{
+  bottom: 40px;
+}
+/* .different-message > .kakko::after{
+  bottom: 0;
+  right: 0;
+} */
+/* マーカー線 */
+.mark-yellow{
+  background: linear-gradient(transparent 65%, #ebb94c 65%);
+  font-weight: bold; 
+}
+
+
+/* 折り返し */
+.kaigyo-text{
+ display: none;
+}
